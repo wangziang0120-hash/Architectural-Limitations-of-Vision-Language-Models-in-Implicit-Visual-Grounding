@@ -99,6 +99,9 @@ The following observations are summarised here; for the full formal analysis of 
 
 ### Model Scale Amplifies Alignment Fragility
 
+![Per-sample IoU difference from Baseline across models and methods](figures/Fig5.jpg)
+*Fig. 5 — Per-sample IoU difference from Baseline for each of the four methods, shown across the three model scales (2B / 4B / 8B). Each sub-panel displays the IoU gap (method minus Baseline) for individual images.*
+
 Under Baseline / Blur / Blackout / Crop, performance varies within 10%, suggesting visual feature extraction has converged even in lightweight models. Under Prompt, the 2B model drops ~30% relative to 8B, indicating insufficient language–vision alignment stability at small parameter counts.
 
 ### Prompt Failure Reflects Structural LM Constraints
